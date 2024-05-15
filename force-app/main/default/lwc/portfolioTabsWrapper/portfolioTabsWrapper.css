@@ -1,0 +1,28 @@
+c-portfolio-tabs-wrapper .slds-tabs_default__nav{
+  background: #f6c403;
+}
+/*c-portfolio-tabs-wrapper .slds-tabs_scoped__nav{
+    background: #f6c403;
+  }*/
+
+  .accordian-wrapper{
+    background: #fff;
+  }
+
+  .show-tabs-on-dekstop-view{
+    display: block;
+  }
+
+  .show-accordian-on-mobile-view{
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    .show-tabs-on-dekstop-view{
+      display: none;
+    }
+    .show-accordian-on-mobile-view{
+      display: block;
+    }
+
+  }

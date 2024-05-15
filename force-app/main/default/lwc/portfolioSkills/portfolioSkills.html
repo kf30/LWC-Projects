@@ -1,0 +1,20 @@
+<template>
+    <div class="skills-wrapper slds-var-p-around_x-large">
+        <h2 class="slds-text-heading_medium slds-var-m-bottom_medium">Technical Skills</h2>
+        <template for:each={techskills} for:item="tech">
+            <lightning-badge label={tech} class="slds-badge slds-var-m-bottom_medium" key={tech}></lightning-badge>
+        </template>
+        <h2 class="slds-text-heading_medium slds-var-m-bottom_medium">Tools and Softwares</h2>
+        <template for:each={toolskills} for:item="tool">
+            <lightning-badge label={tool} class="slds-badge slds-var-m-bottom_medium" key={tool}></lightning-badge>
+        </template>
+        <h2 class="slds-text-heading_medium slds-var-m-bottom_medium">Software Methodologies</h2>
+        <template for:each={medthodologies} for:item="meth">
+            <lightning-badge label={meth} class="slds-badge slds-var-m-bottom_medium" key={meth}></lightning-badge>
+        </template>
+        <h2 class="slds-text-heading_medium slds-var-m-bottom_medium">Soft Skills</h2>
+        <template for:each={softskills} for:item="soft">
+            <lightning-badge label={soft} class="slds-badge slds-var-m-bottom_medium" key={soft}></lightning-badge>
+        </template>
+    </div> 
+</template>

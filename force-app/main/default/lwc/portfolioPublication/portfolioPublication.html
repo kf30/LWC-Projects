@@ -1,0 +1,15 @@
+<template>
+    <!--<h2>{publicationList.publisher}</h2>-->
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" small-device-size="6" medium-device-size="4" large-device-size="3" padding="around-small">
+            <template for:each={publicationList} for:item="publish">
+                    <div class="box" key={publish.title}>
+                        <img src={ieeeLogo} alt="ieee"/>
+                        <a href={publish.url} >
+                            <span>{publish.title}</span>
+                        </a> 
+                    </div>
+            </template> 
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
